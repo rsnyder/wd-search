@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 ## Run simple pipeline
 
-Prints the QID and label for all people found in the first 100 entities in the dump file
+This pipeline prints the QID and label for all people found in the first 100 entities in the dump file.  The Wikidata dump file is assumed to reside in the current directory in the file `latest-all.json.bz2`.  If the dump file is located elsewhere the `--path` argument must be used to specify the location. 
 
 ```bash
 ./read.py --limit 100 | ./filter.py --people | ./transform.py

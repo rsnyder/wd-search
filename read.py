@@ -5,18 +5,17 @@ import logging
 logging.basicConfig(format='%(asctime)s : %(filename)s : %(levelname)s : %(message)s')
 logger = logging.getLogger()
 
-import sys
 import bz2
-import json
+import os
+import sys
 import signal
 from time import time as now
-import traceback
 
 filepos = 0
 ct = 0
 done = False
 
-default_dumpfile = '/opt/data/wikidata-2023-07-23.bz2'
+default_dumpfile = f'./latest-all.json.bz2'
 
 def wikidata(path):
   global filepos, done

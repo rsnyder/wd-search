@@ -1,2 +1,3 @@
-# wd-search
-Wikidata search
+# Wikidata utilities
+
+Simple utility programs for processing Wikidata dump files.
